@@ -14,3 +14,8 @@ void freeTokens(double** tokens, int N);
 void freeTokensInt(int** tokens, int N);
 
 void freeTokens2(double ***tokens, int N1, int N2);
+
+double Wth(double x);
+
+void integrals8(unsigned ndim, const double *x, void *fdata, unsigned fdim, double *fval);
+

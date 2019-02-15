@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<math.h>
 #define Pi (4.*atan(1.))
+#include "structures.h"
 
 void string_copy(char *from, char *to) {
 
@@ -152,3 +153,23 @@ P0=m*(k0)+n;
 //printf("%lf\n",P0);
 return P0;
 }
+
+double Wth(double x)
+{
+double f;
+f=3.*pow(x,-3)*(sin(x)-x*cos(x));
+return f;
+}
+
+void integrals8(unsigned ndim, const double *x, void *fdata, unsigned fdim, double *fval)
+{
+
+        f_params params_function = *(f_params *) fdata;//cast from void to f_params
+        double *k_L= params_function.K_L;
+        double *Pk_L= params_function.PK_L_2pi3;
+        int N= params_function.Nlin;
+
+        double r=x[0];
+        fval[0]=1./(2.*Pi*Pi)*r*r*P_interpolLOG(r,k_L,Pk_L,N)*Wth(r*8.)*Wth(r*8.);
+}
+
