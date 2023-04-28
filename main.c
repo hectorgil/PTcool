@@ -253,23 +253,23 @@ printf("[%d/%d] k->%lf (threadID=%d)\n",i,imax-1,k,tid);
 //Perturbation Theory
        //adapt_integrate(1, Function_P44 , function_parameters, 8, XMIN44, XMAX44,0, precision_rpt, precision_rpt, &P44[i], &trash);//9 sin simetria
 
-        adapt_integrate(1, Function_P33_dd , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33dd, &trash);//6 sin simetria
+        p33dd=0;//adapt_integrate(1, Function_P33_dd , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33dd, &trash);//6 sin simetria
         adapt_integrate(1, Function_P22_dd , function_parameters, 2, XMIN22, XMAX22,0, precision_max, precision_max, &p22dd, &trash);//3 sin simetria
         adapt_integrate(1, Function_P13_d , function_parameters, 2, XMIN13, XMAX13,0, precision_max, precision_max, &p13d, &trash);//3 sin simetria
 
-        adapt_integrate(1, Function_P33_oo , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33oo, &trash);//6 sin simetria
+        p3300=0;//adapt_integrate(1, Function_P33_oo , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33oo, &trash);//6 sin simetria
         adapt_integrate(1, Function_P22_oo , function_parameters, 2, XMIN22, XMAX22,0, precision_max, precision_max, &p22oo, &trash);//3 sin simetria
         adapt_integrate(1, Function_P13_o , function_parameters, 2, XMIN13, XMAX13,0, precision_max, precision_max, &p13o, &trash);//3 sin simetria
 
-        adapt_integrate(1, Function_P33_do , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33do, &trash);//6 sin simetria
+        p33do=0;//adapt_integrate(1, Function_P33_do , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33do, &trash);//6 sin simetria
         adapt_integrate(1, Function_P22_do , function_parameters, 2, XMIN22, XMAX22,0, precision_max, precision_max, &p22do, &trash);//3 sin simetria
 
-        adapt_integrate(1, Function_P24_dd, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24dd, &trash);//6 sin simetria
-        adapt_integrate(1, Function_P24_oo, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24oo, &trash);//6 sin simetria
-        adapt_integrate(1, Function_P24_do1, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24do1, &trash);//6 sin simetria
-        adapt_integrate(1, Function_P24_do2, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24do2, &trash);//6 sin simetria
-        adapt_integrate(1, Function_P15_d , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p15d, &trash);//6 sin simetria
-        adapt_integrate(1, Function_P15_o , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p15o, &trash);//6 sin simetria
+        p24dd=0;//adapt_integrate(1, Function_P24_dd, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24dd, &trash);//6 sin simetria
+        p24oo=0;//adapt_integrate(1, Function_P24_oo, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24oo, &trash);//6 sin simetria
+        p24do1=0;//adapt_integrate(1, Function_P24_do1, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24do1, &trash);//6 sin simetria
+        p24do2=0;//adapt_integrate(1, Function_P24_do2, function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p24do2, &trash);//6 sin simetria
+        p15d=0;//adapt_integrate(1, Function_P15_d , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p15d, &trash);//6 sin simetria
+        p15o=0;//adapt_integrate(1, Function_P15_o , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p15o, &trash);//6 sin simetria
 
         p0=P_interpolLOG(k,klin,Plin,Nlines)*pow(2.*Pi,3);
         p13d=p13d*pow(2.*Pi,3);
