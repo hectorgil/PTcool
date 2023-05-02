@@ -68,7 +68,7 @@
 #40 B4_22
 
 	(see Eq B15 and B16 of 1407.5668)
-	A_TNS(k,mu,b1) = A11*b1*b1*f*mu^2 + A12*b1*f*f*mu^2 + A22*b1*f*f*mup^4 + A23*f*f*f*mu^4 + A33*f*f*f*mu^6
+	A_TNS(k,mu,b1) = A11*b1*b1*f*mu^2 + A12*b1*f*f*mu^2 + A22*b1*f*f*mu^4 + A23*f*f*f*mu^4 + A33*f*f*f*mu^6
 	B_TNS(k,mu,b1) = B1_11*b1*b1*f*f*mu^2 + B1_12*b1*f*f*f*mu^2 + B1_21*b1*f*f*f*mu^2 + B1_22*f*f*f*f*mu^2 + B2_11*b1*b1*f*f*mu^4 + B2_12*b1*f*f*f*mu^4 + B2_21*b1*f*f*f*mu^4 + B2_22*f*f*f*f*mu^4 + B3_12*b1*f*f*f*mu^6 + B3_21*b1*f*f*f*mu^6 + B3_22*f*f*f*f*mu^6 + B4_22*f*f*f*f*mu^8
 
 #41 sigma8 (value of sigma8 computed from Plin)
