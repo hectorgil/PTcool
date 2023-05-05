@@ -257,7 +257,7 @@ printf("[%d/%d] k->%lf (threadID=%d)\n",i,imax-1,k,tid);
         adapt_integrate(1, Function_P22_dd , function_parameters, 2, XMIN22, XMAX22,0, precision_max, precision_max, &p22dd, &trash);//3 sin simetria
         adapt_integrate(1, Function_P13_d , function_parameters, 2, XMIN13, XMAX13,0, precision_max, precision_max, &p13d, &trash);//3 sin simetria
 
-        p3300=0;//adapt_integrate(1, Function_P33_oo , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33oo, &trash);//6 sin simetria
+        p33oo=0;//adapt_integrate(1, Function_P33_oo , function_parameters, 5, XMIN33, XMAX33,0, precision_rpt, precision_rpt, &p33oo, &trash);//6 sin simetria
         adapt_integrate(1, Function_P22_oo , function_parameters, 2, XMIN22, XMAX22,0, precision_max, precision_max, &p22oo, &trash);//3 sin simetria
         adapt_integrate(1, Function_P13_o , function_parameters, 2, XMIN13, XMAX13,0, precision_max, precision_max, &p13o, &trash);//3 sin simetria
 
